@@ -3,18 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>D181 · Acting Justly & Loving Mercy · ZMC Daily Meditation</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <title>D182 · God's Dream for Your Life · ZMC Daily Meditation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --cream: #F5F0E8;
-      --brown-dark: #5C2E00;
-      --brown-mid: #8B4513;
-      --brown-light: #C47A2B;
-      --gold: #D4A843;
-      --text-dark: #2C1A0E;
-      --text-mid: #5C3D1E;
+      --midnight: #0D1B2A;
+      --navy: #1B2F4E;
+      --teal: #1A6B72;
+      --teal-light: #2A9D8F;
+      --gold: #E9C46A;
+      --gold-deep: #F4A261;
+      --cream: #F8F4EC;
       --white: #FFFFFF;
+      --text-dark: #0D1B2A;
+      --text-mid: #2C3E50;
+      --text-light: #5D7083;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -22,16 +25,16 @@
     body {
       background-color: var(--cream);
       color: var(--text-dark);
-      font-family: 'Lato', sans-serif;
+      font-family: 'Nunito', sans-serif;
       font-weight: 300;
       line-height: 1.8;
       min-height: 100vh;
     }
 
-    /* Header */
+    /* ── HEADER ── */
     .header {
-      background: linear-gradient(135deg, var(--brown-dark) 0%, var(--brown-mid) 60%, var(--brown-light) 100%);
-      padding: 40px 24px 32px;
+      background: linear-gradient(160deg, var(--midnight) 0%, var(--navy) 50%, var(--teal) 100%);
+      padding: 44px 24px 36px;
       text-align: center;
       position: relative;
       overflow: hidden;
@@ -40,76 +43,96 @@
     .header::before {
       content: '';
       position: absolute;
-      inset: 0;
-      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-      opacity: 0.4;
+      top: -60px; right: -60px;
+      width: 220px; height: 220px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(42,157,143,0.25) 0%, transparent 70%);
+    }
+
+    .header::after {
+      content: '';
+      position: absolute;
+      bottom: -40px; left: -40px;
+      width: 180px; height: 180px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(233,196,106,0.15) 0%, transparent 70%);
     }
 
     .header-inner { position: relative; z-index: 1; max-width: 640px; margin: 0 auto; }
 
     .zmc-label {
-      font-family: 'Lato', sans-serif;
       font-weight: 700;
       font-size: 10px;
-      letter-spacing: 3px;
+      letter-spacing: 3.5px;
       text-transform: uppercase;
       color: var(--gold);
       margin-bottom: 10px;
     }
 
     .church-name {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Cormorant Garamond', serif;
       font-size: clamp(18px, 4vw, 24px);
       font-weight: 400;
-      color: var(--white);
+      color: rgba(255,255,255,0.85);
       margin-bottom: 6px;
     }
 
     .date-line {
-      font-size: 12px;
-      letter-spacing: 1.5px;
-      color: rgba(255,255,255,0.65);
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: rgba(255,255,255,0.5);
       text-transform: uppercase;
       margin-bottom: 28px;
     }
 
     .day-badge {
       display: inline-block;
-      background: var(--gold);
-      color: var(--brown-dark);
-      font-family: 'Lato', sans-serif;
+      background: linear-gradient(135deg, var(--teal-light), var(--teal));
+      color: var(--white);
       font-weight: 700;
       font-size: 11px;
-      letter-spacing: 2px;
-      padding: 5px 16px;
+      letter-spacing: 2.5px;
+      padding: 5px 18px;
       border-radius: 20px;
-      margin-bottom: 16px;
+      margin-bottom: 18px;
     }
 
     .sermon-title {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(22px, 6vw, 34px);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(24px, 6vw, 38px);
       font-weight: 700;
       color: var(--white);
-      line-height: 1.3;
-      margin-bottom: 10px;
+      line-height: 1.25;
+      margin-bottom: 12px;
     }
 
     .author-line {
       font-size: 13px;
-      color: rgba(255,255,255,0.6);
+      color: rgba(255,255,255,0.55);
       font-style: italic;
       letter-spacing: 0.5px;
     }
 
-    /* Key Verse */
+    /* ── SUNDAY BANNER ── */
+    .sunday-banner {
+      background: linear-gradient(90deg, var(--teal-light), var(--teal));
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+
+    /* ── KEY VERSE ── */
     .verse-block {
       background: var(--white);
-      border-left: 5px solid var(--gold);
+      border-left: 5px solid var(--teal-light);
       margin: 28px 20px;
-      padding: 24px 22px;
-      border-radius: 0 8px 8px 0;
-      box-shadow: 0 2px 12px rgba(92,46,0,0.08);
+      padding: 26px 22px;
+      border-radius: 0 10px 10px 0;
+      box-shadow: 0 4px 20px rgba(13,27,42,0.08);
     }
 
     .verse-label {
@@ -117,28 +140,94 @@
       font-weight: 700;
       letter-spacing: 2.5px;
       text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 10px;
+      color: var(--teal-light);
+      margin-bottom: 12px;
     }
 
     .verse-text {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(16px, 4vw, 20px);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(17px, 4vw, 22px);
       font-style: italic;
       color: var(--text-dark);
       line-height: 1.7;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
     .verse-ref {
       font-size: 12px;
       font-weight: 700;
       letter-spacing: 1px;
-      color: var(--brown-mid);
+      color: var(--teal);
       text-transform: uppercase;
     }
 
-    /* Section */
+    /* ── STANLEY QUOTE ── */
+    .quote-block {
+      background: linear-gradient(135deg, var(--midnight), var(--navy));
+      margin: 0 20px 28px;
+      padding: 26px 24px;
+      border-radius: 12px;
+      text-align: center;
+      position: relative;
+    }
+
+    .quote-mark {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 60px;
+      color: var(--teal-light);
+      opacity: 0.4;
+      line-height: 0.5;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .quote-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(17px, 4vw, 22px);
+      font-style: italic;
+      color: var(--white);
+      line-height: 1.65;
+      margin-bottom: 14px;
+    }
+
+    .quote-author {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    /* ── LANGUAGE TOGGLE ── */
+    .lang-toggle {
+      display: flex;
+      gap: 8px;
+      margin: 24px 20px 4px;
+    }
+
+    .lang-btn {
+      padding: 8px 22px;
+      border-radius: 20px;
+      border: 1.5px solid var(--teal-light);
+      background: transparent;
+      color: var(--teal);
+      font-family: 'Nunito', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn.active {
+      background: var(--teal);
+      border-color: var(--teal);
+      color: var(--white);
+    }
+
+    .lang-content { display: none; }
+    .lang-content.active { display: block; }
+
+    /* ── SECTIONS ── */
     .section {
       padding: 0 20px 8px;
       max-width: 680px;
@@ -150,7 +239,7 @@
       font-weight: 700;
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: var(--brown-light);
+      color: var(--teal-light);
       margin-bottom: 12px;
       margin-top: 28px;
       display: flex;
@@ -162,65 +251,81 @@
       content: '';
       flex: 1;
       height: 1px;
-      background: rgba(196,122,43,0.3);
+      background: rgba(42,157,143,0.25);
     }
 
     .body-text {
       font-size: 15px;
       color: var(--text-mid);
-      line-height: 1.9;
+      line-height: 1.95;
       margin-bottom: 14px;
     }
 
-    /* Language toggle */
-    .lang-toggle {
-      display: flex;
-      gap: 8px;
-      margin: 20px 20px 4px;
+    /* ── CHECKLIST ── */
+    .checklist {
+      background: var(--white);
+      border-radius: 12px;
+      margin: 20px 20px 8px;
+      padding: 22px;
+      box-shadow: 0 4px 20px rgba(13,27,42,0.07);
     }
 
-    .lang-btn {
-      padding: 7px 20px;
-      border-radius: 20px;
-      border: 1.5px solid var(--brown-light);
-      background: transparent;
-      color: var(--brown-mid);
-      font-family: 'Lato', sans-serif;
-      font-size: 13px;
+    .checklist-title {
+      font-size: 10px;
       font-weight: 700;
-      letter-spacing: 1px;
-      cursor: pointer;
-      transition: all 0.2s ease;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--teal-light);
+      margin-bottom: 16px;
     }
 
-    .lang-btn.active {
-      background: var(--brown-dark);
-      border-color: var(--brown-dark);
-      color: var(--white);
-    }
-
-    .lang-content { display: none; }
-    .lang-content.active { display: block; }
-
-    /* Tamil */
-    .tamil-text {
-      font-size: 15px;
-      color: var(--text-mid);
-      line-height: 2;
+    .check-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
       margin-bottom: 14px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid rgba(42,157,143,0.1);
     }
 
-    /* Key Points */
+    .check-item:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .check-icon {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--teal-light), var(--teal));
+      color: white;
+      font-size: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+      font-weight: 700;
+    }
+
+    .check-text {
+      font-size: 14px;
+      color: var(--text-mid);
+      line-height: 1.65;
+    }
+
+    /* ── KEY POINTS ── */
     .key-points {
-      background: linear-gradient(135deg, var(--brown-dark), var(--brown-mid));
+      background: linear-gradient(135deg, var(--midnight), var(--navy));
       margin: 28px 20px;
       border-radius: 12px;
       padding: 26px 22px;
     }
 
     .key-points-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 16px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px;
       color: var(--gold);
       margin-bottom: 18px;
       text-align: center;
@@ -231,225 +336,278 @@
       display: flex;
       gap: 12px;
       align-items: flex-start;
-      margin-bottom: 13px;
+      margin-bottom: 14px;
     }
 
     .key-point-star {
-      color: var(--gold);
+      color: var(--teal-light);
       font-size: 14px;
-      margin-top: 3px;
       flex-shrink: 0;
+      margin-top: 3px;
     }
 
     .key-point-text {
       font-size: 14px;
-      color: rgba(255,255,255,0.9);
-      line-height: 1.6;
+      color: rgba(255,255,255,0.88);
+      line-height: 1.65;
     }
 
-    /* Reflection question */
+    /* ── REFLECTION ── */
     .reflection {
       background: var(--white);
-      border-radius: 10px;
+      border-radius: 12px;
       margin: 0 20px 28px;
-      padding: 22px;
+      padding: 24px;
       text-align: center;
-      box-shadow: 0 2px 12px rgba(92,46,0,0.08);
+      box-shadow: 0 4px 20px rgba(13,27,42,0.07);
+      border-top: 4px solid var(--gold-deep);
+    }
+
+    .reflection-sub {
+      font-size: 10px;
+      color: var(--gold-deep);
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
     }
 
     .reflection-question {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(15px, 4vw, 18px);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(16px, 4vw, 20px);
       font-style: italic;
       color: var(--text-dark);
       line-height: 1.7;
     }
 
-    .reflection-sub {
-      font-size: 12px;
-      color: var(--brown-light);
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-    }
+    /* ── FOOTER ── */
+    .divider { height: 1px; background: rgba(42,157,143,0.15); margin: 4px 20px 0; }
 
-    /* Footer */
     .footer {
-      background: var(--brown-dark);
+      background: var(--midnight);
       text-align: center;
-      padding: 24px 20px;
+      padding: 26px 20px;
       margin-top: 10px;
     }
 
     .footer-cross {
-      font-size: 22px;
-      color: var(--gold);
-      margin-bottom: 8px;
+      font-size: 24px;
+      color: var(--teal-light);
+      margin-bottom: 10px;
     }
 
     .footer-text {
       font-size: 11px;
-      color: rgba(255,255,255,0.5);
-      letter-spacing: 1px;
-      line-height: 1.8;
+      color: rgba(255,255,255,0.45);
+      letter-spacing: 1.5px;
+      line-height: 1.9;
+      text-transform: uppercase;
     }
 
     .footer-ref {
       font-size: 11px;
-      color: rgba(255,255,255,0.35);
-      margin-top: 6px;
+      color: rgba(255,255,255,0.3);
+      margin-top: 8px;
       font-style: italic;
     }
 
-    /* Divider */
-    .divider {
-      height: 1px;
-      background: rgba(196,122,43,0.2);
-      margin: 4px 20px 0;
-    }
-
-    @media (max-width: 400px) {
-      .header { padding: 32px 16px 26px; }
-      .verse-block, .key-points, .reflection { margin-left: 14px; margin-right: 14px; }
+    @media(max-width: 400px) {
+      .header { padding: 32px 16px 28px; }
+      .verse-block, .quote-block, .checklist, .key-points, .reflection { margin-left: 14px; margin-right: 14px; }
       .section { padding: 0 14px 8px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- HEADER -->
   <div class="header">
     <div class="header-inner">
       <div class="zmc-label">Zion Methodist Church · Pondicherry</div>
       <div class="church-name">Today's Daily Meditation</div>
-      <div class="date-line">Saturday, June 6, 2026</div>
-      <div class="day-badge">D 1 8 1</div>
-      <div class="sermon-title">Acting Justly,<br/>Loving Mercy &<br/>Walking Humbly with God</div>
-      <div class="author-line">Brandon Hatmaker · Micah 6:8</div>
+      <div class="date-line">Sunday, June 7, 2026</div>
+      <div class="day-badge">D 1 8 2</div>
+      <div class="sermon-title">Is Your Dream<br/>God's Dream<br/>for Your Life?</div>
+      <div class="author-line">Charles Stanley · Luke 22:42 · Isaiah 55:1–3</div>
     </div>
   </div>
 
-  <!-- Key Verse -->
+  <!-- SUNDAY BANNER -->
+  <div class="sunday-banner">✝ &nbsp; Lord's Day — Sunday Worship &nbsp; ✝</div>
+
+  <!-- KEY VERSE -->
   <div class="verse-block">
-    <div class="verse-label">✦ Key Verse</div>
+    <div class="verse-label">✦ Key Verse — Luke 22:42</div>
     <div class="verse-text">
-      "He has shown you, O mortal, what is good. And what does the Lord require of you?
-      To act justly and to love mercy and to walk humbly with your God."
+      "தகப்பனே, உமக்குச் சித்தமானால் இந்தப் பாத்திரம் என்னைவிட்டு நீங்கும்படி செய்யும்; ஆகிலும் என் சித்தம் அல்ல, உம்முடைய சித்தமே ஆகக்கடவது என்று சொல்லி ஜெபம்பண்ணினார்."
     </div>
-    <div class="verse-ref">— Micah 6:8</div>
+    <div class="verse-ref">— லூக்கா 22:42 · Tamil St. James Bible (BSI)</div>
   </div>
 
-  <!-- Language Toggle -->
+  <!-- STANLEY QUOTE -->
+  <div class="quote-block">
+    <span class="quote-mark">"</span>
+    <div class="quote-text">The bottom line in the Christian life is obedience;<br/>and most people don't even like the word.</div>
+    <div class="quote-author">— Charles Stanley</div>
+  </div>
+
+  <!-- LANGUAGE TOGGLE -->
   <div class="lang-toggle">
-    <button class="lang-btn active" onclick="switchLang('en')">English</button>
-    <button class="lang-btn" onclick="switchLang('ta')">தமிழ்</button>
+    <button class="lang-btn active" onclick="switchLang('en', event)">English</button>
+    <button class="lang-btn" onclick="switchLang('ta', event)">தமிழ்</button>
   </div>
 
-  <!-- English Content -->
+  <!-- ══ ENGLISH ══ -->
   <div class="lang-content active" id="lang-en">
 
     <div class="section">
       <div class="section-label">Understand the Context</div>
-      <p class="body-text">
-        Is the sum of your faith more than simply attending church, studying the Bible and socialising with your Christian friends? One of the responsibilities of God's church is to reach out to the poor and needy.
-      </p>
-      <p class="body-text">
-        Contrary to popular belief, serving the least does not make a missional church. It is about serving the least <em>and</em> your neighbour. It's about balancing the fasting and the feast — making the altar both a place for communion and a place to leave your shoes.
-      </p>
-      <p class="body-text">
-        "Each of us has the responsibility to navigate what serving the least looks like in our life, in our context, and in our church."
-      </p>
-      <p class="body-text">
-        Missional describes the sending or incarnational efforts of the church — to "put on" Jesus, to represent him by focusing on being his hands and feet to our world. Attractional refers to programmes and events designed to gather people to the church campus.
-      </p>
-      <p class="body-text">
-        These two are not opposing forces. Their beauty is found in their coexistence: working in perfect harmony by taking the focus off ourselves and placing it where it ought to be — on God and on others.
-      </p>
+      <p class="body-text">Do you have a dream — a passion that drives you, an interest that you pursue with all the time and resources available to you? That's not a bad thing in itself. But do you ever wonder whether your dream might be interfering with God's will for your life?</p>
+      <p class="body-text">Charles Stanley challenges us with a profound question: whose dream are you really chasing? A God-given dream will always draw you closer to Him — not away from Him. It will honour Him, serve others, and fill you with a deep, lasting satisfaction that no worldly achievement ever can.</p>
+      <p class="body-text">Jesus himself showed us the way in Gethsemane. Facing the cross, he prayed: <em>"Not my will, but yours be done."</em> That is the posture of a heart fully surrendered to God's dream.</p>
     </div>
 
     <div class="section">
-      <div class="section-label">What This Means</div>
-      <p class="body-text">
-        <strong>Mercy</strong> is immediate — it is showing kindness and compassion right now, to the person in front of you in immediate need.
-      </p>
-      <p class="body-text">
-        <strong>Justice</strong> goes further — it is fighting for systems and situations to be made right for everyone, especially the poor, the marginalised, and the oppressed.
-      </p>
-      <p class="body-text">
-        Going to church is the beginning, not the whole, of your faith.
-      </p>
+      <div class="section-label">What This Means For You</div>
+      <p class="body-text">Isaiah 55:1–3 invites us to come to God with our deepest thirsts and hungers. God promises that only He can bring true satisfaction. If your dream is pulling you away from that source, it may be time to lay it down — and trust Him to give you a better one.</p>
+      <p class="body-text">The bottom line, as Stanley puts it, is <strong>obedience</strong>. Not talent. Not ambition. Not opportunity. When we submit our dreams to God's will, we discover something remarkable — His dream for us is always bigger, richer, and more beautiful than anything we could have imagined on our own.</p>
+    </div>
+
+    <!-- PRACTICAL CHECKLIST -->
+    <div class="checklist">
+      <div class="checklist-title">✦ Evaluate Your Dream — A Practical Guide</div>
+
+      <div class="check-item">
+        <div class="check-icon">1</div>
+        <div class="check-text">Reflect on Jesus' words in Luke 22:42 — <em>"Not my will, but yours be done."</em> Does your dream begin here?</div>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">2</div>
+        <div class="check-text">Write down everything you know about God's will for your life. Ask yourself honestly where your dream fits in.</div>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">3</div>
+        <div class="check-text">Identify your real reasons. Are you driven by fame, glory, riches, or an unhealthy competitive streak? Be honest.</div>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">4</div>
+        <div class="check-text">List what you have gained and what you have lost in pursuing your dream. Has it truly been worth it?</div>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">5</div>
+        <div class="check-text">Ask trusted friends, family and mature Christians to evaluate your dream honestly — and genuinely listen to them.</div>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">6</div>
+        <div class="check-text">Read Isaiah 55:1–3. Is your dream centred on growing nearer to God? Will it bring genuine, lasting satisfaction?</div>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">7</div>
+        <div class="check-text">Ask God for wisdom, clarity and boldness to honestly assess your dream — and the courage to act on what He shows you.</div>
+      </div>
     </div>
 
   </div>
 
-  <!-- Tamil Content -->
+  <!-- ══ TAMIL ══ -->
   <div class="lang-content" id="lang-ta">
+
     <div class="section">
       <div class="section-label">சூழல் புரிந்துகொள்ளுங்கள்</div>
-      <p class="tamil-text">
-        கடவுள் நம்மிடம் உண்மையாக என்ன கேட்கிறார்? — மீகா 6:8
-      </p>
-      <p class="tamil-text">
-        இந்த தியானம் நம்மை வெறும் ஞாயிற்றுக்கிழமை தேவாலய வழிபாட்டிலிருந்து உயிரோட்டமான விசுவாச வாழ்க்கைக்கு அழைக்கிறது. Brandon Hatmaker நமக்கு நினைவூட்டுகிறார்: கடவுளின் அழைப்பு எளிமையானது ஆனால் ஆழமானது — நீதியாய் நட, இரக்கத்தை நேசி, கடவுளோடு தாழ்மையாய் நட.
-      </p>
-      <p class="tamil-text">
-        இரக்கம் என்பது உடனடி நிவாரணம் — இப்போது உதவி தேவைப்படுபவருக்கு அன்பும் கருணையும் காட்டுவது. நீதி என்பது இன்னும் ஆழமானது — ஏழைகளுக்கும், ஒடுக்கப்பட்டவர்களுக்கும், விளிம்பு நிலையிலிருப்பவர்களுக்கும் அமைப்புகளும் சூழ்நிலைகளும் சரியாக மாறும்படி போராடுவது.
-      </p>
-      <p class="tamil-text">
-        தேவாலயத்திற்கு வருவது விசுவாசத்தின் ஆரம்பம் — முழுமை அல்ல. நம் திருச்சபைக்கு இரண்டு அழைப்புகள் உண்டு: உலகிற்கு சென்று சேவிக்கும் அழைப்பு (Missional) மற்றும் மக்களை கூட்டி வழிபடும் அழைப்பு (Attractional). இரண்டும் ஒன்றாக இயங்கும்போதே முழுமையான சாட்சி கிடைக்கும்.
-      </p>
+      <p class="body-text">உங்களுக்கு ஒரு கனவு இருக்கிறதா? உங்கள் நேரத்தையும் வளங்களையும் முழுவதுமாக செலவிடும் ஒரு ஆசை, ஒரு இலக்கு? அது தவறான விஷயம் அல்ல. ஆனால் நீங்கள் எப்போதாவது யோசித்திருக்கிறீர்களா — உங்கள் கனவு கடவுளின் சித்தத்திற்கு தடையாக இருக்கிறதா என்று?</p>
+      <p class="body-text">Charles Stanley நம்மை ஆழமான ஒரு கேள்வியுடன் சந்திக்கிறார்: நீங்கள் உண்மையில் யாருடைய கனவை துரத்துகிறீர்கள்? கடவுளால் தரப்பட்ட கனவு எப்போதும் நம்மை அவரிடம் நெருங்க வைக்கும் — அவரிடமிருந்து விலக்காது. அது அவரை மகிமைப்படுத்தும், மற்றவர்களுக்கு சேவை செய்யும், உலகில் எந்த சாதனையும் தர இயலாத ஒரு ஆழமான திருப்தியை தரும்.</p>
+      <p class="body-text">இயேசு கெத்செமனேயில் நமக்கு வழி காட்டினார். சிலுவையை எதிர்நோக்கி அவர் ஜெபித்தார்: <em>"என் சித்தம் அல்ல, உம்முடைய சித்தமே ஆகக்கடவது."</em> கடவுளின் கனவிற்கு முழுமையாக அர்ப்பணிக்கப்பட்ட இதயத்தின் நிலை இதுவே.</p>
     </div>
+
+    <div class="section">
+      <div class="section-label">இதன் அர்த்தம் என்னவென்றால்</div>
+      <p class="body-text">ஏசாயா 55:1–3ல் கடவுள் நம்மை அழைக்கிறார் — நம் ஆழமான தாகத்துடனும் பசியுடனும் அவரிடம் வர. அவர் மட்டுமே உண்மையான திருப்தியை தர முடியும் என்று வாக்குறுதி செய்கிறார். உங்கள் கனவு உங்களை அந்த ஊற்றிலிருந்து விலக்குகிறதா? அப்படியானால் அதை அவர் கரங்களில் ஒப்படைத்து, அவர் உங்களுக்காக வைத்திருக்கும் மேலான கனவை நம்பிக்கையுடன் எதிர்பாருங்கள்.</p>
+      <p class="body-text">Stanley சொல்வதுபோல் இதன் சாரம் <strong>கீழ்ப்படிதல்</strong>. திறமை அல்ல. லட்சியம் அல்ல. வாய்ப்பு அல்ல. நம் கனவுகளை கடவுளின் சித்தத்திற்கு ஒப்படைக்கும்போது நாம் ஒரு놀라மான உண்மையை கண்டுபிடிக்கிறோம் — அவரின் கனவு நாம் தனியாக கற்பனை செய்தவற்றை விட எப்போதும் பெரியது, செழுமையானது, அழகானது.</p>
+    </div>
+
+    <!-- TAMIL CHECKLIST -->
+    <div class="checklist">
+      <div class="checklist-title">✦ உங்கள் கனவை மதிப்பீடு செய்யுங்கள்</div>
+
+      <div class="check-item">
+        <div class="check-icon">1</div>
+        <div class="check-text">லூக்கா 22:42 வார்த்தைகளை தியானியுங்கள் — <em>"என் சித்தம் அல்ல, உம்முடைய சித்தமே."</em> உங்கள் கனவு இங்கிருந்து தொடங்குகிறதா?</div>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">2</div>
+        <div class="check-text">உங்கள் வாழ்வில் கடவுளின் சித்தம் என்னவென்று அறிந்தவற்றை எழுதுங்கள். உங்கள் கனவு அதில் எங்கே பொருந்துகிறது என்று நேர்மையாக கேளுங்கள்.</div>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">3</div>
+        <div class="check-text">உங்கள் உண்மையான காரணங்களை அடையாளம் காணுங்கள். புகழ், ஆசை அல்லது போட்டி மனப்பான்மை உங்களை இயக்குகிறதா? நேர்மையாக இருங்கள்.</div>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">4</div>
+        <div class="check-text">நம்பகமான நண்பர்கள், குடும்பத்தினர் மற்றும் முதிர்ந்த கிறிஸ்தவர்களிடம் உங்கள் கனவை மதிப்பீடு செய்யுமாறு கேளுங்கள் — அவர்கள் சொல்வதை மனதார கேளுங்கள்.</div>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">5</div>
+        <div class="check-text">ஏசாயா 55:1–3 வாசியுங்கள். உங்கள் கனவு கடவுளிடம் நெருங்க உதவுகிறதா? அது உண்மையான, நிலையான திருப்தியை தருமா?</div>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">6</div>
+        <div class="check-text">உங்கள் கனவை நேர்மையாக மதிப்பிட ஞானம், தெளிவு மற்றும் தைரியம் கேட்டு ஜெபியுங்கள் — அவர் காட்டுவதில் செயல்பட தெம்பு கேளுங்கள்.</div>
+      </div>
+    </div>
+
   </div>
 
-  <!-- Key Points -->
+  <!-- KEY POINTS -->
   <div class="key-points">
     <div class="key-points-title">✦ Today's Meditation in Brief ✦</div>
-
     <div class="key-point">
       <div class="key-point-star">✦</div>
-      <div class="key-point-text">Serving the poor is not optional — it is a core responsibility of every believer.</div>
+      <div class="key-point-text">A God-given dream draws you closer to Him — it never pulls you away from His presence.</div>
     </div>
     <div class="key-point">
       <div class="key-point-star">✦</div>
-      <div class="key-point-text">Mercy is immediate relief; justice is long-term, systemic change.</div>
+      <div class="key-point-text">The foundation of Christian living is obedience — not talent, ambition, or opportunity.</div>
     </div>
     <div class="key-point">
       <div class="key-point-star">✦</div>
-      <div class="key-point-text">Going to church is the beginning, not the whole, of your faith.</div>
+      <div class="key-point-text">Surrendering your dream to God is not loss — it is the doorway to something far greater.</div>
     </div>
     <div class="key-point">
       <div class="key-point-star">✦</div>
-      <div class="key-point-text">ஏழைகளுக்கு சேவை செய்வது ஐச்சிகமல்ல — அது ஒவ்வொரு விசுவாசியின் அடிப்படை கடமை.</div>
+      <div class="key-point-text">கடவுளால் தரப்பட்ட கனவு எப்போதும் நம்மை அவரிடம் நெருங்க வைக்கும் — விலக்காது.</div>
     </div>
     <div class="key-point">
       <div class="key-point-star">✦</div>
-      <div class="key-point-text">இரக்கம் உடனடி நிவாரணம்; நீதி நீண்டகால மாற்றம்.</div>
+      <div class="key-point-text">கிறிஸ்தவ வாழ்வின் அடிப்படை கீழ்ப்படிதல் — திறமையோ லட்சியமோ அல்ல.</div>
+    </div>
+    <div class="key-point">
+      <div class="key-point-star">✦</div>
+      <div class="key-point-text">உங்கள் கனவை கடவுளிடம் ஒப்படைப்பது தோல்வி அல்ல — அது மேலான ஒன்றிற்கான வாசல்.</div>
     </div>
   </div>
 
-  <!-- Reflection -->
+  <!-- REFLECTION -->
   <div class="reflection">
     <div class="reflection-sub">Today's Reflection</div>
     <div class="reflection-question">
-      "How can I actively act justly, love mercy,<br/>and walk humbly with God — this week?"
+      "Is the dream I am chasing truly God's dream for my life —<br/>or is it my own will dressed in spiritual clothing?"
     </div>
   </div>
 
   <div class="divider"></div>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <div class="footer">
     <div class="footer-cross">✝</div>
     <div class="footer-text">
       Zion Methodist Church · Pondicherry<br/>
       Daily Meditation Series
     </div>
-    <div class="footer-ref">Brandon Hatmaker · D181 · The Christian Life Bible · Page 1204–1205</div>
+    <div class="footer-ref">Charles Stanley · D182 · Luke 22:42 · Isaiah 55:1–3 · Tamil St. James Bible (BSI)</div>
   </div>
 
   <script>
-    function switchLang(lang) {
+    function switchLang(lang, event) {
       document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
       document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
       document.getElementById('lang-' + lang).classList.add('active');
