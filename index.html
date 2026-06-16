@@ -3,43 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <!-- Google Analytics GA4 — ZMC Daily Meditation -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N9DW0X75DL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N9DW0X75DL');
+  </script>
   <!-- OG META TAGS -->
-  <meta property="og:title" content="D190 · What's Got Your Attention? · ZMC Daily Bible Meditation" />
-  <meta property="og:description" content="Andy Stanley on Proverbs 4:23 — Whatever captures your attention determines your direction. Monday, June 15, 2026 · Day 166 of 365 · Zion Methodist Church, Pondicherry" />
+  <meta property="og:title" content="D191 · Tempting and Testing · ZMC Daily Bible Meditation" />
+  <meta property="og:description" content="Wayne Cordeiro on Hebrews 2:18 — Satan tempts to destroy. God tests to strengthen. Do you know the difference? Tuesday, June 16, 2026 · Day 167 of 365 · Zion Methodist Church, Pondicherry" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://zmcptech.github.io/ZMC-Daily-Meditation-/" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="D190 · What's Got Your Attention? · ZMC Daily Bible Meditation" />
-  <meta name="twitter:description" content="Andy Stanley on Proverbs 4:23 — Monday, June 15, 2026 · Zion Methodist Church, Pondicherry" />
+  <meta name="twitter:title" content="D191 · Tempting and Testing · ZMC Daily Bible Meditation" />
+  <meta name="twitter:description" content="Wayne Cordeiro on Hebrews 2:18 — Tuesday, June 16, 2026 · Zion Methodist Church, Pondicherry" />
 
-  <title>D190 · What's Got Your Attention? · ZMC Daily Bible Meditation</title>
+  <title>D191 · Tempting and Testing · ZMC Daily Bible Meditation</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --dark: #0F2027;
-      --mid: #203A43;
-      --light: #2C5364;
-      --pale: #A8C8D8;
+      --crimson-dark: #1A0A0A;
+      --crimson-mid: #6B1A1A;
+      --crimson-light: #B22222;
+      --rose-pale: #F5C6C6;
       --gold: #F4D03F;
       --gold-deep: #E67E22;
-      --cream: #EFF6F9;
+      --cream: #FDF2F2;
       --white: #FFFFFF;
-      --text-dark: #0A1820;
-      --text-mid: #1C3A4A;
+      --text-dark: #1A0A0A;
+      --text-mid: #4A1515;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { background-color: var(--cream); color: var(--text-dark); font-family: 'Nunito', sans-serif; font-weight: 300; line-height: 1.8; min-height: 100vh; }
 
-    .header { background: linear-gradient(160deg, var(--dark) 0%, var(--mid) 55%, var(--light) 100%); padding: 44px 24px 36px; text-align: center; position: relative; overflow: hidden; }
-    .header::before { content: ''; position: absolute; top: -60px; right: -60px; width: 220px; height: 220px; border-radius: 50%; background: radial-gradient(circle, rgba(44,83,100,0.4) 0%, transparent 70%); }
+    .header { background: linear-gradient(160deg, var(--crimson-dark) 0%, var(--crimson-mid) 55%, var(--crimson-light) 100%); padding: 44px 24px 36px; text-align: center; position: relative; overflow: hidden; }
+    .header::before { content: ''; position: absolute; top: -60px; right: -60px; width: 220px; height: 220px; border-radius: 50%; background: radial-gradient(circle, rgba(178,34,34,0.35) 0%, transparent 70%); }
     .header::after { content: ''; position: absolute; bottom: -40px; left: -40px; width: 180px; height: 180px; border-radius: 50%; background: radial-gradient(circle, rgba(244,208,63,0.15) 0%, transparent 70%); }
     .header-inner { position: relative; z-index: 1; max-width: 640px; margin: 0 auto; }
 
     .logo-box { display: inline-flex; align-items: center; justify-content: center; background: var(--white); border-radius: 12px; width: 76px; height: 76px; margin-bottom: 14px; box-shadow: 0 4px 16px rgba(0,0,0,0.25); }
     .header-logo { width: 54px; height: 54px; object-fit: contain; }
 
-    .series-name { font-weight: 700; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--pale); margin-bottom: 4px; opacity: 0.85; }
+    .series-name { font-weight: 700; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--rose-pale); margin-bottom: 4px; opacity: 0.85; }
     .zmc-label { font-weight: 700; font-size: 10px; letter-spacing: 3.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
     .church-name { font-family: 'Cormorant Garamond', serif; font-size: clamp(17px,4vw,22px); color: rgba(255,255,255,0.85); margin-bottom: 6px; }
     .date-line { font-size: 11px; letter-spacing: 2px; color: rgba(255,255,255,0.5); text-transform: uppercase; margin-bottom: 20px; }
@@ -49,66 +56,84 @@
     .year-progress-day { font-size: 11px; font-weight: 700; color: var(--gold); letter-spacing: 1px; }
     .year-progress-remain { font-size: 10px; color: rgba(255,255,255,0.5); letter-spacing: 0.5px; }
     .year-progress-track { background: rgba(255,255,255,0.15); border-radius: 10px; height: 6px; overflow: hidden; }
-    .year-progress-fill { background: linear-gradient(90deg, var(--gold), var(--gold-deep)); height: 100%; border-radius: 10px; width: 45.5%; }
+    .year-progress-fill { background: linear-gradient(90deg, var(--gold), var(--gold-deep)); height: 100%; border-radius: 10px; width: 45.8%; }
 
-    .sermon-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(26px,6vw,40px); font-weight: 700; color: var(--white); line-height: 1.2; margin-bottom: 6px; }
+    .sermon-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(28px,7vw,44px); font-weight: 700; color: var(--white); line-height: 1.2; margin-bottom: 6px; }
     .sermon-title-ta { font-family: 'Cormorant Garamond', serif; font-size: clamp(15px,3.5vw,20px); font-weight: 400; font-style: italic; color: rgba(255,255,255,0.7); line-height: 1.4; margin-bottom: 12px; }
     .author-line { font-size: 13px; color: rgba(255,255,255,0.55); font-style: italic; }
 
-    .verse-block { background: var(--white); border-left: 5px solid var(--light); margin: 28px 20px; padding: 26px 22px; border-radius: 0 10px 10px 0; box-shadow: 0 4px 20px rgba(15,32,39,0.08); }
-    .verse-label { font-size: 10px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--light); margin-bottom: 12px; }
-    .verse-text { font-family: 'Cormorant Garamond', serif; font-size: clamp(16px,4vw,21px); font-style: italic; color: var(--text-dark); line-height: 1.8; margin-bottom: 10px; }
-    .verse-ref { font-size: 12px; font-weight: 700; letter-spacing: 1px; color: var(--mid); text-transform: uppercase; }
+    .verse-block { background: var(--white); border-left: 5px solid var(--crimson-light); margin: 28px 20px; padding: 26px 22px; border-radius: 0 10px 10px 0; box-shadow: 0 4px 20px rgba(26,10,10,0.08); }
+    .verse-label { font-size: 10px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--crimson-light); margin-bottom: 12px; }
+    .verse-text { font-family: 'Cormorant Garamond', serif; font-size: clamp(15px,4vw,20px); font-style: italic; color: var(--text-dark); line-height: 1.8; margin-bottom: 10px; }
+    .verse-ref { font-size: 12px; font-weight: 700; letter-spacing: 1px; color: var(--crimson-mid); text-transform: uppercase; }
 
-    .highlight-block { background: linear-gradient(135deg, var(--dark), var(--mid)); margin: 0 20px 28px; padding: 26px 24px; border-radius: 12px; text-align: center; }
-    .quote-mark { font-family: 'Cormorant Garamond', serif; font-size: 60px; color: var(--pale); opacity: 0.4; line-height: 0.5; margin-bottom: 14px; display: block; }
+    .highlight-block { background: linear-gradient(135deg, var(--crimson-dark), var(--crimson-mid)); margin: 0 20px 28px; padding: 26px 24px; border-radius: 12px; text-align: center; }
+    .quote-mark { font-family: 'Cormorant Garamond', serif; font-size: 60px; color: var(--rose-pale); opacity: 0.4; line-height: 0.5; margin-bottom: 14px; display: block; }
     .highlight-text { font-family: 'Cormorant Garamond', serif; font-size: clamp(17px,4vw,22px); font-style: italic; color: var(--white); line-height: 1.65; margin-bottom: 14px; }
     .highlight-ref { font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); }
 
-    .attention-visual { background: var(--white); border-radius: 12px; margin: 0 20px 28px; padding: 22px 20px; box-shadow: 0 4px 20px rgba(15,32,39,0.07); }
-    .attention-visual-title { font-size: 10px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--light); margin-bottom: 16px; text-align: center; }
-    .attention-flow { display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
-    .flow-box { background: linear-gradient(135deg, var(--dark), var(--mid)); color: white; border-radius: 10px; padding: 12px 14px; text-align: center; font-size: 12px; font-weight: 700; color: var(--gold); min-width: 80px; }
-    .flow-arrow { font-size: 20px; color: var(--light); font-weight: 700; }
-    .attention-caption { font-size: 13px; color: var(--text-mid); font-style: italic; line-height: 1.6; text-align: center; }
+    /* COMPARISON VISUAL */
+    .compare-visual { background: var(--white); border-radius: 12px; margin: 0 20px 28px; padding: 22px 20px; box-shadow: 0 4px 20px rgba(26,10,10,0.07); }
+    .compare-title { font-size: 10px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--crimson-light); margin-bottom: 16px; text-align: center; }
+    .compare-row { display: flex; gap: 12px; margin-bottom: 0; }
+    .compare-card { flex: 1; border-radius: 10px; padding: 16px 14px; }
+    .compare-card.satan { background: linear-gradient(135deg, #3D0000, #8B0000); }
+    .compare-card.god { background: linear-gradient(135deg, #0A2E1A, #1A6B3A); }
+    .compare-card-title { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; }
+    .compare-card.satan .compare-card-title { color: #FF6B6B; }
+    .compare-card.god .compare-card-title { color: #6BFF9E; }
+    .compare-item { font-size: 12px; color: rgba(255,255,255,0.85); line-height: 1.6; margin-bottom: 6px; padding-left: 12px; position: relative; }
+    .compare-item::before { content: '→'; position: absolute; left: 0; font-size: 10px; }
+    .compare-card.satan .compare-item::before { color: #FF6B6B; }
+    .compare-card.god .compare-item::before { color: #6BFF9E; }
+
+    /* GREEK WORDS */
+    .greek-block { background: var(--white); border-radius: 12px; margin: 0 20px 28px; padding: 22px 20px; box-shadow: 0 4px 20px rgba(26,10,10,0.07); }
+    .greek-title { font-size: 10px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--crimson-light); margin-bottom: 16px; text-align: center; }
+    .greek-row { display: flex; gap: 12px; }
+    .greek-card { flex: 1; background: linear-gradient(135deg, var(--crimson-dark), var(--crimson-mid)); border-radius: 10px; padding: 16px 14px; text-align: center; }
+    .greek-word { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-style: italic; color: var(--gold); margin-bottom: 6px; }
+    .greek-meaning { font-size: 11px; font-weight: 700; color: rgba(255,255,255,0.9); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+    .greek-desc { font-size: 12px; color: rgba(255,255,255,0.7); line-height: 1.5; }
 
     .lang-toggle { display: flex; gap: 8px; margin: 24px 20px 4px; }
-    .lang-btn { padding: 8px 22px; border-radius: 20px; border: 1.5px solid var(--light); background: transparent; color: var(--mid); font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: 700; cursor: pointer; transition: all 0.2s ease; }
-    .lang-btn.active { background: var(--mid); border-color: var(--mid); color: var(--white); }
+    .lang-btn { padding: 8px 22px; border-radius: 20px; border: 1.5px solid var(--crimson-light); background: transparent; color: var(--crimson-mid); font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: 700; cursor: pointer; transition: all 0.2s ease; }
+    .lang-btn.active { background: var(--crimson-mid); border-color: var(--crimson-mid); color: var(--white); }
     .lang-content { display: none; }
     .lang-content.active { display: block; }
 
     .section { padding: 0 20px 8px; max-width: 680px; margin: 0 auto; }
-    .section-label { font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--light); margin-bottom: 12px; margin-top: 28px; display: flex; align-items: center; gap: 10px; }
-    .section-label::after { content: ''; flex: 1; height: 1px; background: rgba(44,83,100,0.25); }
+    .section-label { font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--crimson-light); margin-bottom: 12px; margin-top: 28px; display: flex; align-items: center; gap: 10px; }
+    .section-label::after { content: ''; flex: 1; height: 1px; background: rgba(178,34,34,0.25); }
     .body-text { font-size: 15px; color: var(--text-mid); line-height: 1.95; margin-bottom: 14px; }
 
-    .bring-life { background: rgba(44,83,100,0.08); border-left: 4px solid var(--light); margin: 8px 20px 28px; padding: 20px 22px; border-radius: 0 10px 10px 0; }
-    .bring-title { font-size: 10px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--light); margin-bottom: 12px; }
+    .bring-life { background: rgba(178,34,34,0.07); border-left: 4px solid var(--crimson-light); margin: 8px 20px 28px; padding: 20px 22px; border-radius: 0 10px 10px 0; }
+    .bring-title { font-size: 10px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--crimson-light); margin-bottom: 12px; }
     .bring-text { font-size: 15px; color: var(--text-mid); line-height: 1.9; font-style: italic; }
 
-    .key-points { background: linear-gradient(135deg, var(--dark), var(--mid)); margin: 28px 20px; border-radius: 12px; padding: 26px 22px; }
+    .key-points { background: linear-gradient(135deg, var(--crimson-dark), var(--crimson-mid)); margin: 28px 20px; border-radius: 12px; padding: 26px 22px; }
     .key-points-title { font-family: 'Cormorant Garamond', serif; font-size: 18px; color: var(--gold); margin-bottom: 18px; text-align: center; }
     .key-point { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 14px; }
-    .key-point-star { color: var(--pale); font-size: 14px; flex-shrink: 0; margin-top: 3px; }
+    .key-point-star { color: var(--rose-pale); font-size: 14px; flex-shrink: 0; margin-top: 3px; }
     .key-point-text { font-size: 14px; color: rgba(255,255,255,0.88); line-height: 1.65; }
 
-    .reflection { background: var(--white); border-radius: 12px; margin: 0 20px 28px; padding: 24px; text-align: center; box-shadow: 0 4px 20px rgba(15,32,39,0.07); border-top: 4px solid var(--gold-deep); }
+    .reflection { background: var(--white); border-radius: 12px; margin: 0 20px 28px; padding: 24px; text-align: center; box-shadow: 0 4px 20px rgba(26,10,10,0.07); border-top: 4px solid var(--gold-deep); }
     .reflection-sub { font-size: 10px; color: var(--gold-deep); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; }
     .reflection-question { font-family: 'Cormorant Garamond', serif; font-size: clamp(16px,4vw,20px); font-style: italic; color: var(--text-dark); line-height: 1.7; }
 
-    .divider { height: 1px; background: rgba(44,83,100,0.15); margin: 4px 20px 0; }
-    .footer { background: var(--dark); text-align: center; padding: 26px 20px; margin-top: 10px; }
+    .divider { height: 1px; background: rgba(178,34,34,0.15); margin: 4px 20px 0; }
+    .footer { background: var(--crimson-dark); text-align: center; padding: 26px 20px; margin-top: 10px; }
     .footer-logo-box { display: inline-flex; align-items: center; justify-content: center; background: var(--white); border-radius: 8px; width: 48px; height: 48px; margin-bottom: 12px; }
     .footer-logo { width: 34px; height: 34px; object-fit: contain; }
-    .footer-series { font-size: 10px; color: var(--pale); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px; opacity: 0.7; }
+    .footer-series { font-size: 10px; color: var(--rose-pale); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px; opacity: 0.7; }
     .footer-text { font-size: 11px; color: rgba(255,255,255,0.45); letter-spacing: 1.5px; line-height: 1.9; text-transform: uppercase; }
     .footer-ref { font-size: 11px; color: rgba(255,255,255,0.3); margin-top: 8px; font-style: italic; }
 
     @media(max-width:400px) {
       .header { padding: 32px 16px 28px; }
-      .verse-block, .highlight-block, .attention-visual, .key-points, .reflection, .bring-life { margin-left: 14px; margin-right: 14px; }
+      .verse-block, .highlight-block, .compare-visual, .greek-block, .key-points, .reflection, .bring-life { margin-left: 14px; margin-right: 14px; }
       .section { padding: 0 14px 8px; }
+      .compare-row, .greek-row { flex-direction: column; }
     }
   </style>
 </head>
@@ -123,49 +148,74 @@
       <div class="series-name">Daily Bible Meditation Series</div>
       <div class="zmc-label">Zion Methodist Church · Pondicherry</div>
       <div class="church-name">Today's Bible Meditation</div>
-      <div class="date-line">Monday, June 15, 2026</div>
+      <div class="date-line">Tuesday, June 16, 2026</div>
       <div class="year-progress">
         <div class="year-progress-label">
-          <span class="year-progress-day">Day 166 of 365</span>
-          <span class="year-progress-remain">199 days remaining</span>
+          <span class="year-progress-day">Day 167 of 365</span>
+          <span class="year-progress-remain">198 days remaining</span>
         </div>
         <div class="year-progress-track">
           <div class="year-progress-fill"></div>
         </div>
       </div>
-      <div class="sermon-title">What's Got Your<br/>Attention?</div>
-      <div class="sermon-title-ta">உங்கள் கவனத்தை<br/>எது கவர்கிறது?</div>
-      <div class="author-line">Andy Stanley · Proverbs 4:23</div>
+      <div class="sermon-title">Tempting<br/>and Testing</div>
+      <div class="sermon-title-ta">சோதனையும் சோதிப்பும்</div>
+      <div class="author-line">Wayne Cordeiro · Hebrews 2:18</div>
     </div>
   </div>
 
   <!-- KEY VERSE -->
   <div class="verse-block">
-    <div class="verse-label">✦ Key Verse — Proverbs 4:23</div>
-    <div class="verse-text">"எல்லாக் காவலோடும் உன் இருதயத்தைக் காத்துக்கொள், அதினின்று உயிரின் துறைகள் புறப்படும்."</div>
-    <div class="verse-ref">— நீதிமொழிகள் 4:23 · Tamil St. James Bible (BSI)</div>
+    <div class="verse-label">✦ Key Verse — Hebrews 2:18</div>
+    <div class="verse-text">"அவர் தாமே சோதிக்கப்பட்டு பாடுபட்டதால், சோதிக்கப்படுகிறவர்களுக்கு உதவி செய்ய வல்லவராயிருக்கிறார்."</div>
+    <div class="verse-ref">— எபிரெயர் 2:18 · Tamil St. James Bible (BSI)</div>
   </div>
 
   <!-- HIGHLIGHT QUOTE -->
   <div class="highlight-block">
     <span class="quote-mark">"</span>
-    <div class="highlight-text">If you focus on the pure, the holy, your heart will gravitate to that.<br/>The same holds true for all things related to sin.</div>
-    <div class="highlight-ref">— Andy Stanley</div>
+    <div class="highlight-text">We usually don't perceive testing as a blessing. However, each time we endure it, we're refined and made stronger in our faith.</div>
+    <div class="highlight-ref">— Wayne Cordeiro</div>
   </div>
 
-  <!-- ATTENTION FLOW VISUAL -->
-  <div class="attention-visual">
-    <div class="attention-visual-title">✦ The Principle of Attention</div>
-    <div class="attention-flow">
-      <div class="flow-box">What you<br/>FOCUS on</div>
-      <div class="flow-arrow">→</div>
-      <div class="flow-box">Captures your<br/>HEART</div>
-      <div class="flow-arrow">→</div>
-      <div class="flow-box">Determines your<br/>DIRECTION</div>
-      <div class="flow-arrow">→</div>
-      <div class="flow-box">Shapes your<br/>LIFE</div>
+  <!-- TEMPTATION vs TESTING COMPARISON -->
+  <div class="compare-visual">
+    <div class="compare-title">✦ Two Different Forces — Two Different Purposes</div>
+    <div class="compare-row">
+      <div class="compare-card satan">
+        <div class="compare-card-title">😈 Satan Tempts</div>
+        <div class="compare-item">Greek: Peirazo</div>
+        <div class="compare-item">Pressure to reach breaking point</div>
+        <div class="compare-item">Goal: lead you to sin</div>
+        <div class="compare-item">Intended to destroy faith</div>
+        <div class="compare-item">Targets your weakness</div>
+      </div>
+      <div class="compare-card god">
+        <div class="compare-card-title">✝️ God Tests</div>
+        <div class="compare-item">Greek: Dokimazo</div>
+        <div class="compare-item">Pressure to certify & strengthen</div>
+        <div class="compare-item">Goal: reveal your character</div>
+        <div class="compare-item">Intended to build faith</div>
+        <div class="compare-item">Leads back to Jesus</div>
+      </div>
     </div>
-    <div class="attention-caption">"Wherever you focus your attention, your heart will gravitate to that."<br/>— Proverbs 4:23</div>
+  </div>
+
+  <!-- GREEK WORDS -->
+  <div class="greek-block">
+    <div class="greek-title">✦ Understanding the Greek</div>
+    <div class="greek-row">
+      <div class="greek-card">
+        <div class="greek-word">Peirazo</div>
+        <div class="greek-meaning">Temptation</div>
+        <div class="greek-desc">Putting sinful pressure on a person to reach their breaking point — from Satan</div>
+      </div>
+      <div class="greek-card">
+        <div class="greek-word">Dokimazo</div>
+        <div class="greek-meaning">Testing</div>
+        <div class="greek-desc">Applying pressure to ratify, certify and strengthen — like a carpenter testing a bookcase's sturdiness</div>
+      </div>
+    </div>
   </div>
 
   <!-- LANGUAGE TOGGLE -->
@@ -178,21 +228,20 @@
   <div class="lang-content active" id="lang-en">
     <div class="section">
       <div class="section-label">Understand the Context</div>
-      <p class="body-text">Have you ever had something or someone grab or capture your attention? Think about the terms we use to describe this phenomenon: <em>Grab. Capture.</em> There is a lot of emotion associated with those two terms. And understandably so. Whatever has ever grabbed your attention, there was probably a good bit of emotion associated with that moment. You may be living in something that grabbed your attention. You may be living with someone who grabbed — or maybe it would be better to say <em>captured</em> — your attention.</p>
-      <p class="body-text">The reason you are driving, living in, or living with something or someone who grabbed your attention is that once it or they had your attention, you drifted in their direction. That's understandable because <em>attention determines direction.</em> And that's not always a bad thing.</p>
-      <p class="body-text">All of us have people or events or opportunities in our past that reflect the much-discussed flip side. Looking back, there are people you wish you had never met, numbers you wish you'd never acknowledged, business "opportunities" you wish you had never initiated. In many cases, life was better before these things grabbed your attention. The path you were on before they came along was the path you should have adhered to.</p>
-      <p class="body-text">And what grabbed your attention altered your direction. I usually there is a strong emotional appeal to the things that capture our attention. We get sucked in to those detours because something about them resonates with our emotions. My observation is that the things that tend to grab our attention in an unhealthy way are the things we should avoid. Often the things that capture our attention influences our direction.</p>
+      <p class="body-text">The truth is that Satan watches our lives for the areas in which we are most vulnerable. He looks for opportune moments to sink his hooks into our skin. But once we understand his tactics, we can identify the exposed areas of our characters that are prone to attack.</p>
+      <p class="body-text">There are two verbs we need to clarify in our minds and understand in our hearts. One relates to temptation and the other to testing. The Enemy of our souls will tempt us. The Greek word for "tempt" is <em>peirazo</em>, which refers to putting pressure on an object to reach its breaking point. Satan will present you with sinful, idolatrous temptations that are intended to lead you away from the path of righteous obedience to God.</p>
+      <p class="body-text">God, on the other hand, will never tempt you — but He will test you. "Testing" comes from the word <em>dokimazo</em>, which refers to the act of applying pressure to ratify or certify something. Consider a carpenter who, after building a bookcase, presses on it to check its sturdiness. He purposely applies pressure on his work to test its solidity and reliability. When God tests us, it can feel a bit like that. God applies pressure to our lives because He wants to certify our characters, testing how we respond.</p>
     </div>
     <div class="section">
       <div class="section-label">What This Means For You</div>
-      <p class="body-text">That's the principle of the path — in three words: <strong>attention determines direction.</strong> Wherever you focus your attention, your heart will gravitate to that. If you focus on the pure, the holy, your heart will move toward those things. The same holds true for all things related to sin.</p>
-      <p class="body-text">This is why Solomon — the wisest man who ever lived — wrote: <em>"Above all else, guard your heart, for everything you do flows from it."</em> (Proverbs 4:23). He didn't say guard your behaviour. He didn't say guard your reputation. He said guard your <strong>heart</strong> — because he understood that the heart follows the eyes, and the eyes follow the attention, and the attention shapes everything.</p>
-      <p class="body-text">What are you giving your attention to today? What are you feeding your heart with? The scroll you linger on. The conversation you replay in your mind. The image you return to. The grudge you rehearse. All of these are shaping you — quietly, consistently, powerfully. <em>Guard your heart</em> — not just your actions. Because what gets your attention gets you.</p>
+      <p class="body-text">Temptation is intended to lead you to failure and disobedience, while testing reveals the strength of your faith and your convictions. When testing breaks us, leading to failure, this can actually be a blessing. Godly testing reveals areas of self-sufficiency, dependence on our own gifts and abilities, and lack of faith in God — leading us back to Jesus as the only source of our life and strength.</p>
+      <p class="body-text">This is why Hebrews 2:18 is such a comfort: <em>"Because he himself suffered when he was tempted, he is able to help those who are being tempted."</em> Jesus was not untouched by the pressure you feel today. He faced it. He endured it. He overcame it. And because He did, He stands ready — not as a distant judge but as a seasoned companion — to help you through yours.</p>
+      <p class="body-text">So the next time pressure comes — whether it is a temptation from the Enemy or a test from God — pause and ask: <em>Is this trying to pull me away from God, or draw me closer?</em> That single question will help you discern the source, and respond with wisdom rather than fear.</p>
     </div>
 
     <div class="bring-life">
       <div class="bring-title">✦ Bring It To Life</div>
-      <div class="bring-text">Take an honest look at what consistently grabs your attention each day. What are you scrolling through? What are you dwelling on? What emotions are being stirred repeatedly? Ask yourself — is what's capturing my attention moving me toward God, or away from Him? Then ask the Holy Spirit to help you redirect your attention to what is pure, true, and holy — and watch how your direction begins to change.</div>
+      <div class="bring-text">Think about the times you've been tested. Instead of feeling as though it is punishment or something terrible that you deserve, determine to accept it as God's loving care for you. God is refining you, His warrior, making you stronger. Testing is His training class for your life.</div>
     </div>
   </div>
 
@@ -200,38 +249,38 @@
   <div class="lang-content" id="lang-ta">
     <div class="section">
       <div class="section-label">சூழல் புரிந்துகொள்ளுங்கள்</div>
-      <p class="body-text">எப்போதாவது ஏதாவது அல்லது யாரோ உங்கள் கவனத்தை பிடித்திருக்கிறார்களா? நாம் இந்த நிகழ்வை விவரிக்க பயன்படுத்தும் வார்த்தைகளை சிந்தியுங்கள்: <em>பிடிக்கும், கைப்பற்றும்.</em> இந்த இரண்டு சொற்களோடும் நிறைய உணர்ச்சிகள் தொடர்புடையவை. உங்கள் கவனத்தை எப்போதாவது பிடித்தது என்ன — அதோடு நிச்சயமாக நல்ல அளவு உணர்ச்சி இருந்திருக்கும்.</p>
-      <p class="body-text">யாரோ அல்லது எதோ உங்கள் கவனத்தை பிடித்ததால் நீங்கள் அந்த திசையில் நகர்ந்தீர்கள் — இதுவே காரணம். இது புரிந்துகொள்ளக்கூடியது, ஏனென்றால் <em>கவனம் திசையை தீர்மானிக்கிறது.</em> இது எப்போதும் தவறான விஷயம் அல்ல.</p>
-      <p class="body-text">நம் அனைவருக்கும் கடந்த காலத்தில் சில மனிதர்கள், நிகழ்வுகள் அல்லது வாய்ப்புகள் இருக்கின்றன — நாம் சந்திக்காமல் இருந்திருந்தால் நலமாக இருந்திருக்கும் என்று இப்போது நினைப்பவை. அவை உங்கள் கவனத்தை பிடிக்கும் முன்பு வாழ்வு சிறப்பாக இருந்தது. நீங்கள் இருந்த பாதை நீங்கள் இருந்திருக்க வேண்டிய பாதை. ஆனால் உங்கள் கவனத்தை பிடித்தது உங்கள் திசையை மாற்றியது.</p>
+      <p class="body-text">உண்மை என்னவென்றால் சாத்தான் நம் வாழ்வில் நாம் மிகவும் பலவீனமாக இருக்கும் இடங்களை கவனிக்கிறான். சரியான தருணங்களில் தன் கொக்கிகளை நம் மாம்சத்தில் செலுத்த வாய்ப்பு தேடுகிறான். ஆனால் அவன் தந்திரங்களை நாம் புரிந்துகொண்டால், தாக்குதலுக்கு உட்பட்ட நம் பலவீனமான பகுதிகளை அடையாளம் காண முடியும்.</p>
+      <p class="body-text">நம் மனதில் தெளிவுபடுத்திக்கொள்ள வேண்டிய இரண்டு வினைச்சொற்கள் இருக்கின்றன. ஒன்று சோதனையோடு தொடர்புடையது, மற்றொன்று சோதிப்போடு. நம் ஆன்மாவின் எதிரி நம்மை சோதிப்பான். "சோதனை" என்பதற்கான கிரேக்க வார்த்தை <em>peirazo</em> — ஒரு பொருளை அதன் முறிவு புள்ளிக்கு கொண்டு செல்ல அழுத்தம் கொடுப்பது என்று பொருள். சாத்தான் உங்களை கடவுளுக்கு கீழ்ப்படியும் பாதையிலிருந்து விலக்கும் நோக்கத்தோடு பாவமான, விக்கிரக சோதனைகளை முன் வைப்பான்.</p>
+      <p class="body-text">கடவுளோ உங்களை ஒருபோதும் சோதிக்க மாட்டார் — ஆனால் அவர் உங்களை சோதிப்பார். "சோதிப்பு" என்பதற்கான வார்த்தை <em>dokimazo</em> — ஒன்றை உறுதிப்படுத்த அல்லது சான்றளிக்க அழுத்தம் கொடுப்பது. ஒரு தச்சன் புத்தக அலமாரி செய்த பிறகு அதன் உறுதியை சோதிக்க அழுத்துவதை நினைத்துப்பாருங்கள். அதே போல கடவுள் நம் வாழ்வில் அழுத்தம் கொடுக்கும்போது, அது நம் குணாதிசயங்களை சான்றளிக்கவும் நாம் எவ்வாறு பதிலளிக்கிறோம் என்பதை சோதிக்கவும்தான்.</p>
     </div>
     <div class="section">
       <div class="section-label">இதன் அர்த்தம் என்னவென்றால்</div>
-      <p class="body-text">இதுவே வாழ்வின் கொள்கை — மூன்று வார்த்தைகளில்: <strong>கவனம் திசையை தீர்மானிக்கிறது.</strong> நீங்கள் எதில் கவனம் செலுத்துகிறீர்களோ, உங்கள் இதயம் அதை நோக்கி நகரும். தூய்மையான, பரிசுத்தமான விஷயங்களில் கவனம் செலுத்தினால் இதயம் அங்கு செல்லும். பாவத்தோடு தொடர்புடைய விஷயங்களிலும் இதுவே உண்மை.</p>
-      <p class="body-text">எப்போதும் வாழ்ந்த மிகவும் ஞானமுள்ள மனிதனான சாலொமோன் எழுதினார்: <em>"எல்லாக் காவலோடும் உன் இருதயத்தைக் காத்துக்கொள், அதினின்று உயிரின் துறைகள் புறப்படும்."</em> (நீதிமொழிகள் 4:23). அவர் உங்கள் நடத்தையை காக்கச் சொல்லவில்லை. உங்கள் நற்பெயரை காக்கச் சொல்லவில்லை. <strong>இருதயத்தை</strong> காக்கச் சொன்னார் — ஏனென்றால் இதயம் கண்களை பின்பற்றுகிறது, கண்கள் கவனத்தை பின்பற்றுகின்றன, கவனம் எல்லாவற்றையும் வடிவமைக்கிறது.</p>
-      <p class="body-text">இன்று நீங்கள் உங்கள் கவனத்தை எதற்கு கொடுக்கிறீர்கள்? நீங்கள் உங்கள் இதயத்தை எதால் போஷிக்கிறீர்கள்? நீங்கள் தாமதிக்கும் திரை. மனதில் திரும்பி திரும்பி வரும் உரையாடல். திரும்பி திரும்பி பார்க்கும் படம். மனதில் வளர்க்கும் வைராக்கியம். இவை எல்லாம் — அமைதியாக, தொடர்ச்சியாக, வலிமையாக — உங்களை வடிவமைக்கின்றன. <em>உங்கள் இதயத்தை காத்துக்கொள்ளுங்கள்</em> — வெறும் செயல்களை மட்டுமல்ல. ஏனென்றால் உங்கள் கவனத்தை பெறுவது உங்களையே பெறுகிறது.</p>
+      <p class="body-text">சோதனை உங்களை தோல்விக்கும் கீழ்ப்படியாமைக்கும் இட்டுச் செல்ல நோக்கமாகிறது. சோதிப்போ உங்கள் விசுவாசத்தின் வலிமையை வெளிப்படுத்துகிறது. சோதிப்பு நம்மை உடைக்கும்போது — தோல்விக்கு வழிவகுக்கும்போது — இது உண்மையில் ஒரு ஆசீர்வாதமாக இருக்கலாம். தேவ சோதிப்பு நம் சுயதேர்வு, நம் சொந்த திறமைகளில் தங்கியிருத்தல், கடவுளிடம் விசுவாசமின்மை என்பவற்றை வெளிப்படுத்தி நம்மை இயேசுவிடம் திரும்ப வழிநடத்துகிறது.</p>
+      <p class="body-text">எபிரெயர் 2:18 இவ்வளவு ஆறுதல் தருவது இதனால்தான்: <em>"அவர் தாமே சோதிக்கப்பட்டு பாடுபட்டதால், சோதிக்கப்படுகிறவர்களுக்கு உதவி செய்ய வல்லவராயிருக்கிறார்."</em> இயேசு இன்று நீங்கள் உணரும் அழுத்தத்திலிருந்து விலகியிருந்தவர் அல்ல. அவர் அதை எதிர்கொண்டார். தாங்கினார். வென்றார். அதனால் அவர் தொலைதூர நீதிபதியாக அல்ல — அனுபவமுள்ள தோழனாக — உங்கள் சோதனையில் உதவ ஆயத்தமாக இருக்கிறார்.</p>
+      <p class="body-text">அடுத்த முறை அழுத்தம் வரும்போது — அது எதிரியிடமிருந்து வரும் சோதனையாக இருந்தாலும், கடவுளின் சோதிப்பாக இருந்தாலும் — ஒரு கணம் நிறுத்தி கேளுங்கள்: <em>இது என்னை கடவுளிடமிருந்து விலக்க முயற்சிக்கிறதா, அல்லது நெருங்க அழைக்கிறதா?</em> இந்த ஒரு கேள்வி ஆதாரத்தை கண்டறிந்து பயமின்றி ஞானமாக பதிலளிக்க உதவும்.</p>
     </div>
 
     <div class="bring-life">
       <div class="bring-title">✦ வாழ்வில் கொண்டு வாருங்கள்</div>
-      <div class="bring-text">ஒவ்வொரு நாளும் உங்கள் கவனத்தை என்ன தொடர்ச்சியாக பிடிக்கிறது என்று நேர்மையாக பாருங்கள். நீங்கள் எதில் நேரம் செலவிடுகிறீர்கள்? என்ன உணர்ச்சிகள் திரும்பி திரும்பி தூண்டப்படுகின்றன? கேளுங்கள் — என் கவனத்தை பிடிப்பது என்னை கடவுளை நோக்கி அழைத்துச் செல்கிறதா, அல்லது விலக்குகிறதா? பரிசுத்த ஆவியிடம் உங்கள் கவனத்தை தூய்மையான, உண்மையான, பரிசுத்தமான விஷயங்களுக்கு திசைதிருப்ப உதவுமாறு கேளுங்கள்.</div>
+      <div class="bring-text">நீங்கள் சோதிக்கப்பட்ட தருணங்களை நினைத்துப்பாருங்கள். அது தண்டனையாகவோ, நீங்கள் தகுதியற்றவர் என்பதற்கான அடையாளமாகவோ உணராதீர்கள். அதை கடவுளின் அன்பான கவலையாக ஏற்றுக்கொள்ள தீர்மானியுங்கள். கடவுள் உங்களை — அவரின் போர்வீரனை — சுத்திகரிக்கிறார், வலிமைப்படுத்துகிறார். சோதிப்பு உங்கள் வாழ்விற்கான அவரின் பயிற்சி வகுப்பு!</div>
     </div>
   </div>
 
   <!-- KEY POINTS -->
   <div class="key-points">
     <div class="key-points-title">✦ Today's Meditation in Brief ✦</div>
-    <div class="key-point"><div class="key-point-star">✦</div><div class="key-point-text">Attention determines direction — wherever you consistently focus, your heart will eventually follow.</div></div>
-    <div class="key-point"><div class="key-point-star">✦</div><div class="key-point-text">Guard your heart, not just your behaviour — because the heart shapes everything that flows from your life (Proverbs 4:23).</div></div>
-    <div class="key-point"><div class="key-point-star">✦</div><div class="key-point-text">What gets your attention gets you — the scroll, the image, the conversation you replay are all quietly shaping your direction.</div></div>
-    <div class="key-point"><div class="key-point-star">✦</div><div class="key-point-text">கவனம் திசையை தீர்மானிக்கிறது — நீங்கள் தொடர்ந்து எதில் கவனம் செலுத்துகிறீர்களோ, உங்கள் இதயம் இறுதியில் அதை பின்பற்றும்.</div></div>
-    <div class="key-point"><div class="key-point-star">✦</div><div class="key-point-text">வெறும் நடத்தையை மட்டுமல்ல, இதயத்தை காத்துக்கொள்ளுங்கள் — ஏனென்றால் இதயம் வாழ்வில் ஓடும் எல்லாவற்றையும் வடிவமைக்கிறது.</div></div>
-    <div class="key-point"><div class="key-point-star">✦</div><div class="key-point-text">உங்கள் கவனத்தை பெறுவது உங்களையே பெறுகிறது — திரை, உரையாடல், மனதில் திரும்பும் படங்கள் — இவை அமைதியாக உங்களை வடிவமைக்கின்றன.</div></div>
+    <div class="key-point"><div class="key-point-star">✦</div><div class="key-point-text">Satan tempts (peirazo) to destroy — God tests (dokimazo) to strengthen. Learn to tell the difference.</div></div>
+    <div class="key-point"><div class="key-point-star">✦</div><div class="key-point-text">Temptation pulls you away from God. Testing draws you back to Jesus as your only source of life and strength.</div></div>
+    <div class="key-point"><div class="key-point-star">✦</div><div class="key-point-text">Jesus was tempted in every way we are — and because He endured it, He is able to help you through yours (Hebrews 2:18).</div></div>
+    <div class="key-point"><div class="key-point-star">✦</div><div class="key-point-text">Testing is not punishment — it is God's training class, refining you into a stronger, more faithful warrior for His kingdom.</div></div>
+    <div class="key-point"><div class="key-point-star">✦</div><div class="key-point-text">சாத்தான் அழிக்க சோதிக்கிறான் — கடவுள் வலிமைப்படுத்த சோதிக்கிறார். இந்த வித்தியாசத்தை புரிந்துகொள்ளுங்கள்.</div></div>
+    <div class="key-point"><div class="key-point-star">✦</div><div class="key-point-text">சோதிப்பு தண்டனை அல்ல — அது கடவுளின் பயிற்சி வகுப்பு, அவரின் இராஜ்யத்திற்கான வலிமையான போர்வீரனாக உங்களை செம்மைப்படுத்துகிறது.</div></div>
   </div>
 
   <!-- REFLECTION -->
   <div class="reflection">
     <div class="reflection-sub">Today's Reflection · இன்றைய சிந்தனை</div>
-    <div class="reflection-question">"What has been getting the most of my attention lately —<br/>and is it moving me closer to God,<br/>or quietly pulling me away from Him?"</div>
+    <div class="reflection-question">"What I am facing right now —<br/>is it a temptation trying to pull me away from God,<br/>or a test He is using to make me stronger?"</div>
   </div>
 
   <div class="divider"></div>
@@ -243,7 +292,7 @@
     </div>
     <div class="footer-series">Daily Bible Meditation Series</div>
     <div class="footer-text">Zion Methodist Church · Pondicherry</div>
-    <div class="footer-ref">Andy Stanley · D190 · Day 166/365 · Proverbs 4:23 · Tamil St. James Bible (BSI)</div>
+    <div class="footer-ref">Wayne Cordeiro · D191 · Day 167/365 · Hebrews 2:18 · Tamil St. James Bible (BSI)</div>
   </div>
 
   <script>
